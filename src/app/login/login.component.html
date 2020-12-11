@@ -1,0 +1,19 @@
+<div *ngIf='!auth'>
+    {{errorMsg}}
+</div>
+<div *ngIf='success'>
+    {{loginMsg}}
+</div>
+<div class="bg-light">
+    <label for="userId">Username:</label>
+    <input type="text" id="userId" placeholder="Nome utente" [(ngModel)]="userid">
+
+    
+    <label for="userPw">Password:</label>
+    <input type="password" id="userPw" placeholder="Password" [(ngModel)]="password">
+
+    <button class="btn btn-primary" (click) = gestAut() type="button">
+        Login
+    </button>
+
+</div>

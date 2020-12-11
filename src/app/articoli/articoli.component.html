@@ -1,0 +1,30 @@
+
+<style>
+    td {
+        padding: 15px;
+    }
+</style>
+<h1>Articoli disponibili</h1>
+
+
+<table class="table" id="articoli">
+    <caption>Prodotti</caption>
+    <thead>
+        <tr>
+            <th>Codice Articolo</th>
+            <th>Nome</th>
+            <th>Scadenza</th>
+            <th>Pezzi</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let articolo of articoli">
+            <td>{{ articolo.employeeId }}</td>
+            <td>{{ articolo.employeeName }}</td>
+            <td>{{ articolo.employeeAddress }}</td>
+            <td>{{ articolo.employeeEmail }}</td>
+
+        </tr>
+    </tbody>
+</table>
