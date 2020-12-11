@@ -17,16 +17,9 @@ export class Articoli {
   styleUrls: ['./articoli.component.css']
 })
 export class ArticoliComponent implements OnInit {
-NumArt = 0;
-articoli : Articoli[] | undefined;
-
- /* articoli = [
-    new Articoli('001', 'Prodotto 1', new Date(), 50),
-    new Articoli('002', 'Prodotto 2', new Date(), 54),
-    new Articoli('003', 'Prodotto 3', new Date(), 222),
-    new Articoli('004', 'Prodotto 4', new Date(), 1009)
-
-  ] */
+  NumArt = 0;
+  articoli : Articoli[];
+ 
   
   constructor(private articoliService: EmployeeDataService) { }
 
